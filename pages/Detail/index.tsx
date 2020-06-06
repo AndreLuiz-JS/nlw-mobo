@@ -27,6 +27,7 @@ interface Data {
 		whatsapp: string;
 		city: string;
 		uf: string;
+		image_url: string;
 	};
 	items: {
 		title: string;
@@ -67,7 +68,7 @@ const Details = () => {
 				<Image
 					style={styles.pointImage}
 					source={{
-						uri: data.point.image,
+						uri: data.point.image_url,
 					}}
 				/>
 				<Text style={styles.pointName}>{data.point.name}</Text>
